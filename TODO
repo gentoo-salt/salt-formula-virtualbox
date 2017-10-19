@@ -1,0 +1,6 @@
+TODO:
+ - make sure the modules are present in /etc/conf.d/modules (use augeas)
+   modules="vboxdrv vboxnetadp vboxnetflt vboxpci"
+ - find out which kernel modules are required and update deps.sls: https://wiki.gentoo.org/wiki/VirtualBox
+ - get rid of module.run from deps.sls and use augeas instead. if .config was changed, compile kernel and install it
+
